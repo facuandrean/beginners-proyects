@@ -159,6 +159,7 @@ button {
         max-height: 500px;
         max-width: 768px;
         min-width: 740px;
+        min-height: 480px;
         padding: 0;
     }
 
