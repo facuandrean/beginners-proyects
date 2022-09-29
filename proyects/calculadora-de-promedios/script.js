@@ -13,7 +13,7 @@ btnAccept.addEventListener('click', () => {
     let prom = promedio(notaTp1, notaTp2, notaFinal);
 
     let resultados = document.getElementById('resultados');
-    resultados.innerHTML = prom;
+    resultados.innerHTML = Math.trunc(prom);
 
     let condicion = document.getElementById('condicion')
     if (prom >= 7) {
@@ -22,3 +22,9 @@ btnAccept.addEventListener('click', () => {
         condicion.innerHTML = "Reprobado"
     };
 });
+
+let btnCancel = document.getElementById("btn-cancel");
+
+btnCancel.addEventListener("click", () => {
+    location.reload()
+})
