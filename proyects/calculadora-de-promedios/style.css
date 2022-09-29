@@ -77,12 +77,18 @@ button {
     padding: 0;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 /* Components */
 
 .form {
     width: 90%;
     height: 40%;
-    background-color: rgb(240, 97, 97);
+    background-color: rgb(112, 114, 116);
     padding: 1rem;
     border-radius: 1rem;
     -webkit-box-shadow: 10px 10px 37px -4px rgba(0,0,0,0.75);
@@ -112,6 +118,13 @@ button {
     font-family: var(--font);
     font-weight: bold;
     border-radius: 1rem;
+    transition: background-color .5s ease-in;
+}
+
+.btn:hover {
+    transition: background-color .5s ease-in;
+    background-color: #c9bfb7;
+    cursor: pointer;
 }
 
 .resultados {
@@ -162,6 +175,18 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+
+
+
+.inputs input:focus {
+    transition: background-color .5s ease-in-out;
+}
+
+.inputs input:focus {
+    outline: none;
+    background-color: rgb(147, 150, 153);
+    transition: background-color .5s ease-in-out;
 }
 
 .buttons {
