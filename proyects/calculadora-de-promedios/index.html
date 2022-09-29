@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Cofla 10</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="centrar-columna">
+    <form class="form">
+        <div class="inputs">
+            <label for="nota-tp1" class="label">
+                Nota del Trabajo Práctico n°1: 
+                <input type="number" id="nota-tp1" class="nota">
+            </label>
+            <br>
+            <label for="nota-tp2" class="label">
+                Nota del Trabajo Práctico n°2: 
+                <input type="number" id="nota-tp2" class="nota">
+            </label>
+            <br>
+            <label for="nota-final" class="label">
+                Nota del Final: 
+                <input type="number" id="nota-final" class="nota">
+            </label>
+        </div>
+        <div class="buttons centrar">
+            <!-- <button class="btn btn-accept" id="btn-accept"> Aceptar </button> -->
+            <input type="button" value="Aceptar" class="btn btn-accept" id="btn-accept">
+            <!-- <button class="btn btn-cancel"> Cancelar </button> -->
+            <input type="button" value="Cancelar" class="btn btn-cancel" id="btn-cancel">
+        </div>
+    </form>
+    <div class="resultados">
+        <h1>Resultados</h1>
+        <h2 id="resultados"></h2>
+        <h2 id="condicion"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
